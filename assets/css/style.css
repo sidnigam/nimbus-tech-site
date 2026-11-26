@@ -51,7 +51,7 @@ body {
   position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Lexend", "Jost", sans-serif;
   color: var(--clr-navy-dark);
   line-height: 1.2;
@@ -1118,7 +1118,7 @@ section { padding: 90px 0; overflow: hidden; }
 .footer-brand p { font-size: 14px; color: rgba(255,255,255,0.4); margin-bottom: 6px; }
 .footer-brand strong { color: rgba(255,255,255,0.6); }
 
-.footer-top h4 {
+.footer-top h4, .footer-top h2 {
   font-size: 13px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 1px; color: rgba(255,255,255,0.7);
   margin-bottom: 16px; font-family: "Lexend", sans-serif;
@@ -1751,3 +1751,8 @@ body.cursor-text #cursor-ring { opacity: 0; }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Footer NAP line (identical on every page) */
+#footer .nap { font-size: 14px; color: rgba(255,255,255,0.55); margin: 0 0 8px; }
+#footer .nap strong { color: rgba(255,255,255,0.8); }
+#footer .footer-bottom .nap { margin-bottom: 6px; }

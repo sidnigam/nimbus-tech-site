@@ -3,22 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>The SMB Guide to Building Your First RAG Pipeline | Nimbus Tech Solutions</title>
-  <meta name="description" content="Retrieval-Augmented Generation explained without the jargon. A practical walkthrough of connecting your internal documents to an LLM — in a weekend, for under $200/month.">
-  <link rel="canonical" href="https://nimbustechsolutions.com/blog/smb-rag-pipeline-guide.html">
+  <title>First RAG Pipeline Guide for Small Business | Nimbus, Lowell</title>
+  <meta name="description" content="Connect your business documents to an LLM in a weekend for under $200/month, in plain English. Want one built for you? Book a free 30-minute strategy call.">
+  <link rel="canonical" href="https://sidnigam.github.io/nimbus-tech-site/blog/smb-rag-pipeline-guide.html">
 
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://nimbustechsolutions.com/blog/smb-rag-pipeline-guide.html">
-  <meta property="og:title" content="The SMB Guide to Building Your First RAG Pipeline | Nimbus Tech Solutions">
-  <meta property="og:description" content="Retrieval-Augmented Generation explained without the jargon. A practical walkthrough for under $200/month.">
-  <meta property="og:image" content="https://nimbustechsolutions.com/assets/img/hero-img.png">
+  <meta property="og:site_name" content="Nimbus Tech Solutions">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://sidnigam.github.io/nimbus-tech-site/blog/smb-rag-pipeline-guide.html">
+  <meta property="og:title" content="First RAG Pipeline Guide for Small Business | Nimbus, Lowell">
+  <meta property="og:description" content="Connect your business documents to an LLM in a weekend for under $200/month, in plain English. Want one built for you? Book a free 30-minute strategy call.">
+  <meta property="og:image" content="https://sidnigam.github.io/nimbus-tech-site/assets/img/hero-img.png">
+  <meta property="og:image:width" content="780">
+  <meta property="og:image:height" content="646">
+  <meta property="og:image:alt" content="Nimbus Tech Solutions, AI and cloud consulting for small businesses">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="First RAG Pipeline Guide for Small Business | Nimbus, Lowell">
+  <meta name="twitter:description" content="Connect your business documents to an LLM in a weekend for under $200/month, in plain English. Want one built for you? Book a free 30-minute strategy call.">
+  <meta name="twitter:image" content="https://sidnigam.github.io/nimbus-tech-site/assets/img/hero-img.png">
+  <meta name="twitter:image:alt" content="Nimbus Tech Solutions, AI and cloud consulting for small businesses">
+
   <meta property="article:author" content="Sid Nigam">
   <meta property="article:published_time" content="2026-02-03">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The SMB Guide to Building Your First RAG Pipeline">
-  <meta name="twitter:description" content="Connect your internal documents to an LLM in a weekend, for under $200/month.">
-  <meta name="twitter:image" content="https://nimbustechsolutions.com/assets/img/hero-img.png">
 
   <link href="../assets/img/favicon.png" rel="icon">
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -33,9 +39,9 @@
     "headline": "The SMB Guide to Building Your First RAG Pipeline",
     "description": "Retrieval-Augmented Generation explained without the jargon. A practical walkthrough of connecting your internal documents to an LLM — in a weekend, for under $200/month.",
     "author": { "@type": "Person", "name": "Sid Nigam", "url": "https://www.linkedin.com/in/sidnigam/" },
-    "publisher": { "@type": "Organization", "name": "Nimbus Tech Solutions", "url": "https://nimbustechsolutions.com" },
+    "publisher": { "@type": "Organization", "name": "Nimbus Tech Solutions", "url": "https://sidnigam.github.io/nimbus-tech-site/" },
     "datePublished": "2026-02-03",
-    "url": "https://nimbustechsolutions.com/blog/smb-rag-pipeline-guide.html"
+    "url": "https://sidnigam.github.io/nimbus-tech-site/blog/smb-rag-pipeline-guide.html"
   }
   </script>
   <style>
@@ -50,13 +56,14 @@
     .blog-divider { margin: 3rem 0; }
     .blog-cta-box { background: var(--bg-card, #f8f9fa); border-radius: 12px; padding: 2rem; text-align: center; }
     .blog-cta-btn { display: inline-block; margin-top: 1rem; }
+    .blog-cta-local { font-size: 0.95rem; margin-bottom: 0; }
     .blog-related-section { padding: 48px 0; border-top: 1px solid #e9ecef; }
     .blog-related-container { max-width: 860px; }
     .blog-related-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 20px; color: #1e293b; }
     .blog-related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .blog-related-card { background: #f8f9fa; border-radius: 10px; padding: 20px; text-decoration: none; color: inherit; display: block; border: 1px solid #e9ecef; transition: border-color 0.2s, box-shadow 0.2s; }
     .blog-related-card:hover { border-color: #0ea5e9; box-shadow: 0 4px 16px rgba(14,165,233,0.1); color: inherit; }
-    .blog-related-card h4 { font-size: 1rem; font-weight: 600; margin: 8px 0 6px; color: #1e293b; }
+    .blog-related-card h3 { font-size: 1rem; font-weight: 600; margin: 8px 0 6px; color: #1e293b; }
     .blog-related-card p { font-size: 0.85rem; color: #6b7280; margin: 0; line-height: 1.5; }
     .blog-related-read { font-size: 0.82rem; font-weight: 600; color: #0ea5e9; display: inline-block; margin-top: 10px; }
     @media (max-width: 576px) { .blog-related-grid { grid-template-columns: 1fr; } }
@@ -75,7 +82,7 @@
         <ul>
           <li><a class="nav-link" href="../index.html#about">About</a></li>
           <li><a class="nav-link" href="../index.html#services">Services</a></li>
-          <li><a class="nav-link" href="../index.html#insights">Insights</a></li>
+          <li><a class="nav-link" href="../index.html#notes">Insights</a></li>
           <li><a class="getstarted" href="../index.html#contact">Free Strategy Call</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -90,7 +97,7 @@
         <nav aria-label="breadcrumb" class="blog-breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="../index.html#insights">Insights</a></li>
+            <li class="breadcrumb-item"><a href="../index.html#notes">Insights</a></li>
             <li class="breadcrumb-item active">SMB RAG Pipeline Guide</li>
           </ol>
         </nav>
@@ -128,7 +135,8 @@
         <hr class="blog-divider">
         <div class="blog-cta-box">
           <h3>Want a production RAG pipeline for your business?</h3>
-          <p>We've built RAG systems that handle 10,000+ queries/day. Book a free call and we'll scope out what's right for your use case.</p>
+          <p>We've built RAG systems that handle 10,000+ queries/day. Book a free call and we'll scope out what's right for your use case, or see where AI fits first with our <a href="../index.html#pricing">Cloud &amp; AI Audit and AI readiness assessment</a>.</p>
+          <p class="blog-cta-local">Local to us? See how we help <a href="../lowell.html">small businesses in Lowell and the Merrimack Valley</a> and <a href="../boston-smb.html">Boston-area small businesses</a>.</p>
           <a href="../index.html#contact" class="btn-hero-primary blog-cta-btn">Book Free Strategy Call</a>
         </div>
       </div>
@@ -136,17 +144,17 @@
 
     <section class="blog-related-section">
       <div class="container blog-related-container">
-        <h3 class="blog-related-title">Related Posts</h3>
+        <h2 class="blog-related-title">Related Posts</h2>
         <div class="blog-related-grid">
           <a href="cut-aws-bill-30-percent.html" class="blog-related-card">
             <span class="blog-tag blog-tag-aws">AWS · FinOps</span>
-            <h4>How to Cut Your AWS Bill by 30% in 30 Days</h4>
+            <h3>How to Cut Your AWS Bill by 30% in 30 Days</h3>
             <p>Five FinOps tactics that deliver fast ROI without re-architecting your stack.</p>
             <span class="blog-related-read">Read More →</span>
           </a>
           <a href="kubernetes-vs-ecs-2026.html" class="blog-related-card">
             <span class="blog-tag blog-tag-strategy">Strategy</span>
-            <h4>Kubernetes vs. ECS: Which Should Your SMB Choose in 2026?</h4>
+            <h3>Kubernetes vs. ECS: Which Should Your SMB Choose in 2026?</h3>
             <p>Cost, complexity, and a decision framework — so you pick the right container platform.</p>
             <span class="blog-related-read">Read More →</span>
           </a>
@@ -158,6 +166,7 @@
   <footer id="footer">
     <div class="footer-bottom">
       <div class="container">
+        <p class="nap"><strong>Nimbus Tech Solutions</strong> · Lowell, MA · <a href="../index.html#contact">Book a free 30-minute strategy call</a></p>
         <span>&copy; 2026 Nimbus Tech Solutions. All rights reserved. &nbsp;·&nbsp; <a href="../index.html">Home</a> &nbsp;·&nbsp; <a href="../privacy.html">Privacy Policy</a></span>
       </div>
     </div>
