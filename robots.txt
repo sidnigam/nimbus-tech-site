@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sidnigam.github.io/nimbus-tech-site/sitemap.xml
+Sitemap: https://nimbustechsolutions.com/sitemap.xml
